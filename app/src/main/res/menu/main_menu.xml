@@ -1,60 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <group android:checkableBehavior="single">
-
+<!--  ************************************** -->
+<!--     MADE BY BANAN ABU-RAHMEH (1170686)  -->
+<!--     ALSO OSID ABU-ALRUB (1183096)       -->
+<!--  ************************************** -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group>
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/home_icon"
             android:title="Home" />
     </group>
-
-
-    <group android:checkableBehavior="single">
-
+    <group>
         <item
             android:id="@+id/nav_cart"
             android:icon="@drawable/cart_icon"
             android:title="Cart" />
     </group>
-
-
-    <group android:checkableBehavior="single">
-
-        <item android:title="Profile">
-            <menu>
-
-
-                <item
-                    android:id="@+id/nav_login"
-                    android:icon="@drawable/login_icon"
-                    android:title="Login" />
-
-                <item
-                    android:id="@+id/nav_profile"
-                    android:icon="@drawable/profile_icon"
-                    android:title="Profile" />
-
-                <item
-                    android:id="@+id/nav_logout"
-                    android:icon="@drawable/logout_icon"
-                    android:title="Logout" />
-
-
-            </menu>
-
-        </item>
-
+    <group>
+        <item
+            android:id="@+id/nav_order"
+            android:icon="@drawable/ic_baseline_shopping_cart_24"
+            android:title="Orders" />
     </group>
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/share_icon"
-                android:title="Share" />
-
-        </menu>
-    </item>
-
-
+    <group>
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profile_icon"
+            android:title="Profile" />
+    </group>
+    <group>
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/login_icon"
+            android:title="Login" />
+    </group>
+    <group>
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout_icon"
+            android:title="Logout" />
+    </group>
 </menu>

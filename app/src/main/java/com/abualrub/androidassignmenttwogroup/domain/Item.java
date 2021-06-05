@@ -2,23 +2,26 @@ package com.abualrub.androidassignmenttwogroup.domain;
 
 import com.abualrub.androidassignmenttwogroup.utils.Category;
 
+// ************************************** //
+//    MADE BY OSID ABU-ALRUB (1183096)    //
+// ************************************** //
 public class Item {
     private String title;
-    private int quantity;
     private double rating;
     private double price;
     private Category category;
+    private int icon;
 
     public Item(){
 
     }
 
-    public Item(String title, int quantity, double rating, double price,Category category) {
+    public Item(String title, double rating, double price,Category category,int icon) {
         this.title = title;
-        this.quantity = quantity;
         this.rating = rating;
         this.price = price;
         this.category = category;
+        this.icon = icon;
     }
 
     public String getTitle() {
@@ -27,14 +30,6 @@ public class Item {
 
     public void setTitle(String title) {
         this.title = title;
-    }
-
-    public int getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
     }
 
     public double getRating() {
@@ -59,5 +54,13 @@ public class Item {
 
     public void setCategory(Category category){
         this.category = category;
+    }
+
+    public int getIcon(){
+        return this.icon;
+    }
+
+    public void setIcon(int icon){
+        this.icon= icon;
     }
 }

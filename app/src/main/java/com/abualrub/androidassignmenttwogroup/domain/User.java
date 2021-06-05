@@ -1,5 +1,9 @@
 package com.abualrub.androidassignmenttwogroup.domain;
 
+
+// ************************************** //
+//    MADE BY OSID ABU-ALRUB (1183096)    //
+// ************************************** //
 public class User {
     private String firstName;
     private String lastName;

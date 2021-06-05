@@ -1,9 +1,11 @@
+<!--  ************************************** -->
+<!--     MADE BY OSID ABU-ALRUB (1183096)    -->
+<!--  ************************************** -->
 <resources>
     <string name="app_name">Sports IO</string>
     <string name="osid_textViewCreateAccount">
         <u>No account? Create one!</u>
     </string>
-    <string name="osid_textViewToolBarText">Welcome Back!</string>
     <string name="osid_editTextUserName">Username</string>
     <string name="osid_editTextPassword">Password</string>
     <string name="osid_buttonLogin"> LOGIN </string>
@@ -31,7 +33,7 @@
         Courses
     </string>
     <string name="osid_textViewWriteNotes">Write Notes</string>
-    <string name="osid_buttonAdd">Add</string>
+    <string name="osid_buttonAdd">+</string>
     <string name="osid_editTextCardNumber">Card Number</string>
     <string name="osid_textViewCardNumberRules">*16 numbers</string>
     <string name="osid_editTextCardHolderName">Card Holder Name</string>
@@ -40,4 +42,18 @@
     <string name="osid_textViewCardCVVRules">*3 numbers</string>
     <string name="osid_editTextCardExpireDateMonth">Month - 2#</string>
     <string name="osid_editTextCardExpireDateYear">Year - 4#</string>
+
+    <string name="osid_navigationDrawerOpen">Open navigation drawer</string>
+    <string name="osid_navigationDrawerClose">Close navigation drawer</string>
+    <string name="osid_titlePlaceholder">title</string>
+    <string name="osid_ratingPlaceholder">rating</string>
+    <string name="osid_pricePlaceholder">Price</string>
+    <string name="osid_buttonRemove">-</string>
+    <string name="osid_numberPlaceholder">1</string>
+    <string name="osid_addToCart">Add to cart</string>
+    <string name="osid_removeFromCart">Remove From Cart</string>
+    <string name="osid_placeOrder">Place Order</string>
+    <string name="osid_totalWithTax">Total With Tax</string>
+    <string name="osid_checkout">Checkout</string>
+    <string name="osid_orderSummary">Orders Summary</string>
 </resources>

@@ -1,34 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--  ************************************** -->
+<!--     MADE BY OSID ABU-ALRUB (1183096)    -->
+<!--  ************************************** -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignInActivity">
-
+    android:id="@+id/fragmentLogin">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/white"
         >
+
         <RelativeLayout
             android:id="@+id/relativeLayout"
+            style="@style/osid_universalPadding"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            style="@style/osid_universalPadding">
+            android:layout_height="match_parent">
 
             <TextView
-                style="@style/osid_textViewTitle"
-                android:text="@string/app_name"
                 android:id="@+id/textViewTitle"
-                />
+                style="@style/osid_textViewTitle"
+                android:text="@string/app_name" />
 
             <EditText
                 android:id="@+id/editTextUsername"
                 style="@style/osid_editTextStyle"
-                android:hint="@string/osid_editTextUserName"
                 android:layout_below="@id/textViewTitle"
                 android:layout_marginTop="30dp"
-                android:inputType="text"/>
+                android:hint="@string/osid_editTextUserName"
+                android:inputType="text" />
 
             <TextView
                 android:id="@+id/textViewUsernameRules"
@@ -43,7 +45,7 @@
                 android:layout_below="@id/editTextUsername"
                 android:layout_marginTop="30dp"
                 android:hint="@string/osid_editTextPassword"
-                android:inputType="textPassword"/>
+                android:inputType="textPassword" />
 
             <TextView
                 android:id="@+id/textViewPasswordRulesNumeric"
@@ -75,26 +77,24 @@
 
             <Button
                 android:id="@+id/buttonLogin"
+                style="@style/osid_buttonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/osid_buttonLogin"
                 android:layout_below="@+id/textViewPasswordRulesUppercase"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="100dp"
                 android:onClick="buttonLoginHandleClick"
-                style="@style/osid_buttonStyle"/>
+                android:text="@string/osid_buttonLogin" />
 
             <TextView
                 android:id="@+id/textViewCreateAccount"
-                android:text="@string/osid_textViewCreateAccount"
+                style="@style/osid_textViewLoginOrRegister"
                 android:layout_below="@+id/buttonLogin"
                 android:layout_centerHorizontal="true"
                 android:onClick="textViewCreateAccountHandleClick"
-                style="@style/osid_textViewLoginOrRegister" />
+                android:text="@string/osid_textViewCreateAccount" />
 
 
         </RelativeLayout>
-
     </ScrollView>
-
 </RelativeLayout>

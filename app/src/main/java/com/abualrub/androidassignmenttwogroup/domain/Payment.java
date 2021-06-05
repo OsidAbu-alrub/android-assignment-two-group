@@ -1,5 +1,8 @@
 package com.abualrub.androidassignmenttwogroup.domain;
 
+// ************************************** //
+//    MADE BY OSID ABU-ALRUB (1183096)    //
+// ************************************** //
 public class Payment {
     private String cardNumber;
     private String cardHolderName;

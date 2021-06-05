@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--  ************************************** -->
+<!--     MADE BY OSID ABU-ALRUB (1183096)    -->
+<!--  ************************************** -->
 <resources>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
@@ -16,5 +19,9 @@
     </color>
     <color name="green_700">
         #00ed00
+    </color>
+
+    <color name="gold">
+        #ffc508
     </color>
 </resources>

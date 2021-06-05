@@ -5,6 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Calendar;
 import java.util.Date;
+
+// ************************************** //
+//    MADE BY OSID ABU-ALRUB (1183096)    //
+// ************************************** //
 public class Validator {
     private static final String NAME_REGEX = "[a-zA-Z]+";
     private static final int NAME_MIN_LENGTH = 2;
@@ -83,7 +87,10 @@ public class Validator {
         return false;
     }
     public boolean isValidCardMonth(String month){
-        if(month.trim().length() == CARD_EXPIRE_MONTH_LENGTH) return true;
+        int monthAsNumber = Integer.parseInt(month);
+        if(month.trim().length() == CARD_EXPIRE_MONTH_LENGTH
+            && monthAsNumber <= 12
+            && monthAsNumber >= 1) return true;
         showToast("Invalid month");
         return false;
     }
