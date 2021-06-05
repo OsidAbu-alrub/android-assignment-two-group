@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!--  ************************************** -->
+<!--     MADE BY OSID ABU-ALRUB (1183096)    -->
+<!--  ************************************** -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            style="@style/osid_universalPadding">
+
+            <TextView
+                style="@style/osid_textViewTitle"
+                android:text="@string/app_name"
+                android:id="@+id/textViewTitle"
+                />
+
+            <EditText
+                android:id="@+id/editTextUsername"
+                style="@style/osid_editTextStyle"
+                android:hint="@string/osid_editTextUserName"
+                android:layout_marginTop="50dp"
+                android:inputType="text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewUserNameRulesLength"
+                android:text="@string/osid_textViewUsernameRules"
+                />
+
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                style="@style/osid_editTextStyle"
+                android:hint="@string/osid_editTextPassword"
+                android:layout_marginTop="30dp"
+                android:inputType="textPassword"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewPasswordRulesNumeric"
+                android:text="@string/osid_textViewPasswordRulesNumeric"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewPasswordRulesLowercase"
+                android:text="@string/osid_textViewPasswordRulesLowercase"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewPasswordRulesUppercase"
+                android:text="@string/osid_textViewPasswordRulesUppercase"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewPasswordRulesLength"
+                android:text="@string/osid_textViewPasswordRulesLength"
+                />
+
+            <EditText
+                android:id="@+id/editTextFirstName"
+                style="@style/osid_editTextStyle"
+                android:hint="@string/osid_editTextFirstName"
+                android:layout_marginTop="30dp"
+                android:inputType="text"/>
+
+            <TextView
+                android:id="@+id/textViewFirstNameRulesEnglishCharacters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/osid_textViewNameRulesEnglishCharacters" />
+
+            <TextView
+                android:id="@+id/textViewFirstNameRulesLength"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/osid_textViewNameRulesLength" />
+
+
+            <EditText
+                android:id="@+id/editTextLastName"
+                style="@style/osid_editTextStyle"
+                android:hint="@string/osid_editTextLastName"
+                android:layout_marginTop="30dp"
+                android:inputType="text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewLastNameRulesEnglishCharacters"
+                android:text="@string/osid_textViewNameRulesEnglishCharacters"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewLastNameRulesLength"
+                android:text="@string/osid_textViewNameRulesLength"
+                />
+
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                style="@style/osid_editTextStyle"
+                android:hint="@string/osid_editTextEmail"
+                android:layout_marginTop="30dp"
+                android:inputType="textEmailAddress"/>
+
+            <TextView
+                android:id="@+id/textViewEmailRules"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/osid_textViewEmailRules" />
+
+
+            <EditText
+                android:id="@+id/editTextPhoneNumber"
+                style="@style/osid_editTextStyle"
+                android:hint="@string/osid_editTextPhoneNumber"
+                android:layout_marginTop="30dp"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/textViewPhoneNumberRules"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/osid_textViewPhoneNumberRules" />
+
+            <EditText
+                android:id="@+id/editTextCardNumber"
+                style="@style/osid_editTextStyle"
+                android:hint="@string/osid_editTextCardNumber"
+                android:layout_marginTop="30dp"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/textViewCardNumberRules"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/osid_textViewCardNumberRules" />
+
+            <EditText
+                android:id="@+id/editTextCardHolderName"
+                style="@style/osid_editTextStyle"
+                android:hint="@string/osid_editTextCardHolderName"
+                android:layout_marginTop="30dp"
+                android:inputType="text"/>
+
+            <EditText
+                android:id="@+id/editTextCardCVV"
+                style="@style/osid_editTextStyle"
+                android:hint="@string/osid_editTextCardCVV"
+                android:layout_marginTop="30dp"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/textViewCardCVVRules"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/osid_textViewCardCVVRules" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editTextCardExpireDateMonth"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="22sp"
+                    android:hint="@string/osid_editTextCardExpireDateMonth"
+                    android:layout_toRightOf="@+id/editTextCardExpireDateYear"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="3"
+                    android:inputType="number"/>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <EditText
+                    android:id="@+id/editTextCardExpireDateYear"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="22sp"
+                    android:layout_weight="6"
+                    android:hint="@string/osid_editTextCardExpireDateYear"
+                    android:layout_marginTop="30dp"
+                    android:inputType="number"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <Button
+                android:id="@+id/buttonSave"
+                android:layout_below="@id/textViewPhoneNumberRules"
+                android:onClick="buttonSaveHandleClick"
+                android:layout_marginTop="30dp"
+                android:text="@string/osid_buttonSave"
+                android:layout_gravity="center_horizontal"
+                style="@style/osid_buttonStyle" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+</RelativeLayout>

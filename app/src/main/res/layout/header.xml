@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--  ************************************** -->
+<!--     MADE BY BANAN ABU-RAHMEH (1170686)  -->
+<!--     ALSO OSID ABU-ALRUB (1183096)       -->
+<!--  ************************************** -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/green_300"
+    style="@style/osid_universalPadding"
+    android:gravity="center_vertical"
+    android:elevation="5dp">
+
+    <ImageView
+        android:layout_marginTop="22dp"
+        android:id="@+id/shopIcon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_baseline_sports_handball_24" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sports IO"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:layout_below="@id/shopIcon"
+        android:textSize="25sp"
+        android:id="@+id/textViewTitle"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>

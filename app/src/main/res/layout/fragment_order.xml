@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--  ************************************** -->
+<!--     MADE BY OSID ABU-ALRUB (1183096)    -->
+<!--  ************************************** -->
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="@string/osid_orderSummary"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewOrdersNoOrders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="No orders have been made yet"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:padding="20dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerViewOrders"
+        android:scrollbars="vertical"
+        android:layout_marginTop="10dp"
+        />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
