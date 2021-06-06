@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="osid_editTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">22sp</item>
+
+    </style>
+
+    <style name="osid_toolbarStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/purple_700</item>
+        <item name="android:layout_height">
+            70dp
+        </item>
+    </style>
+
+    <style name="osid_textViewToolBarTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="osid_textViewTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="osid_universalPadding">
+        <item name="android:padding">30dp</item>
+    </style>
+
+    <style name="osid_textViewLoginOrRegister">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginTop">
+            7dp
+        </item>
+
+    </style>
+
+    <style name="osid_buttonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">35dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingRight">35dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+</resources>

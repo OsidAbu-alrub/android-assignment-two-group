@@ -2,32 +2,25 @@ package com.abualrub.androidassignmenttwogroup.domain;
 
 import java.util.ArrayList;
 
+// ************************************** //
+//    MADE BY OSID ABU-ALRUB (1183096)    //
+// ************************************** //
 public class Order {
-    private Cart cart;
-    private User user;
+    private ArrayList<Cart> carts;
 
     public Order(){
-
+        carts = new ArrayList<>();
     }
 
-    public Order(Cart cart, User user) {
-        this.cart = cart;
-        this.user = user;
+    public Order(ArrayList<Cart> carts) {
+        this.carts = carts;
     }
 
-    public Cart getCart() {
-        return cart;
+    public ArrayList<Cart> getCarts() {
+        return carts;
     }
 
-    public void setCart(Cart cart) {
-        this.cart = cart;
-    }
-
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
+    public void setCarts(ArrayList<Cart> carts) {
+        this.carts = carts;
     }
 }

@@ -1,43 +1,61 @@
 package com.abualrub.androidassignmenttwogroup.domain;
 
-import java.util.ArrayList;
+import com.abualrub.androidassignmenttwogroup.utils.IConstants;
 
-public class Cart {
-    private ArrayList<Item> items;
-    private double totalPriceAfterTax;
-    private double totalPriceBeforeTax;
 
+// ************************************** //
+//    MADE BY OSID ABU-ALRUB (1183096)    //
+// ************************************** //
+import java.util.HashMap;
+
+public class Cart implements IConstants {
+    private HashMap<Integer,Item> items;
+    private String date;
     public Cart(){
-
+        items = new HashMap<Integer,Item>();
     }
 
-    public Cart(ArrayList<Item> items, double totalPriceAfterTax, double totalPriceBeforeTax) {
+    public String calculateTax(){
+        double tax = 0;
+        for(Item item : items.values()){
+            tax += item.getPrice()*TAX_RATE;
+        }
+        return String.format("Taxes: %.2f",tax);
+    }
+
+    public String calculatePriceWithTax(){
+        double priceWithTax = 0;
+        for(Item item : items.values()){
+            priceWithTax += (item.getPrice()*TAX_RATE)+item.getPrice();
+        }
+        return String.format("Total With Tax: %.2f",priceWithTax);
+    }
+
+    public String calculatePriceWithoutTax(){
+        double priceWithoutTax = 0;
+        for(Item item : items.values()){
+            priceWithoutTax += item.getPrice();
+        }
+        return String.format("Total Without Tax: %.2f",priceWithoutTax);
+    }
+
+    public Cart(HashMap<Integer,Item> items) {
         this.items = items;
-        this.totalPriceAfterTax = totalPriceAfterTax;
-        this.totalPriceBeforeTax = totalPriceBeforeTax;
     }
 
-    public ArrayList<Item> getItems() {
+    public HashMap<Integer,Item> getItems() {
         return items;
     }
 
-    public void setItems(ArrayList<Item> items) {
+    public void setItems(HashMap<Integer,Item> items) {
         this.items = items;
     }
 
-    public double getTotalPriceAfterTax() {
-        return totalPriceAfterTax;
+    public void setDate(String date){
+        this.date = date;
     }
 
-    public void setTotalPriceAfterTax(double totalPriceAfterTax) {
-        this.totalPriceAfterTax = totalPriceAfterTax;
-    }
-
-    public double getTotalPriceBeforeTax() {
-        return totalPriceBeforeTax;
-    }
-
-    public void setTotalPriceBeforeTax(double totalPriceBeforeTax) {
-        this.totalPriceBeforeTax = totalPriceBeforeTax;
+    public String getDate(){
+        return date;
     }
 }
