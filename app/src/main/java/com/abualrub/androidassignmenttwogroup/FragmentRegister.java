@@ -105,6 +105,8 @@ public class FragmentRegister extends FragmentRoot implements ITags {
         // save to shared prefs
         editor.putString(USER, jsonStudent);
         editor.putBoolean(IS_CREATED_USER, true);
+        editor.putString(ORDER,null);
+        editor.putString(CART,null);
         editor.commit();
 
         openFragment(new FragmentLogin(),false);
